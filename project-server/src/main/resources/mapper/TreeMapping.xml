@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fushaolei.server.dao.TreeDao">
+    <select id="findTree" resultType="com.fushaolei.server.bean.Tree">
+        select id, chapter_name
+        from chapter
+        where type = #{id};
+    </select>
+</mapper>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">明日新闻</string>
+
+    <!--登录模块-->
+    <string name="Login">登录</string>
+    <string name="RegisterAndLogin">注册并登录</string>
+    <string name="LoginOrRegister">登录/注册</string>
+    <string name="unlogin">退出登录</string>
+
+    <!--widget-->
+    <string name="comment_title">评论区</string>
+    <string name="error_text">加载错误，点击重试</string>
+</resources>

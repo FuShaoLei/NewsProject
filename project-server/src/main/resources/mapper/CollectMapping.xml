@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fushaolei.server.dao.CollectDao">
+    <select id="getCollect" resultType="com.fushaolei.server.bean.Collect">
+        SELECT *
+        from collect
+        where news_id = #{news_id}
+          and user_id = #{user_id};
+    </select>
+    <insert id="insertCollect" parameterType="com.fushaolei.server.bean.Collect">
+        insert into collect(news_id, user_id)
+        VALUES (#{news_id}, #{user_id});
+    </insert>
+    <update id="updateCollect" parameterType="com.fushaolei.server.bean.Collect">
+        update collect
+        set status = #{status}
+        where news_id = #{news_id}
+          and user_id = #{user_id};
+    </update>
+    <select id="getCollectByUserId" resultType="com.fushaolei.server.bean.News">
+        select n.id, n.author, n.title, n.date, n.cover
+        from collect c
+                 left join news n on n.id = c.news_id
+        where c.user_id = #{id} and c.status = true
+    </select>
+</mapper>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_radius">10dp</dimen>
+    <dimen name="my_title">20dp</dimen>
+    <dimen name="my_raduis_bg">50dp</dimen>
+    <dimen name="arrow_icon_size">22dp</dimen>
+    <dimen name="normal_icon_size">24dp</dimen>
+    <dimen name="bigger_icon_size">70dp</dimen>
+    <dimen name="normal_font_size">15dp</dimen>
+    <dimen name="bigger_font_size">20dp</dimen>
+    <dimen name="little_font_size">14dp</dimen>
+    <dimen name="normal_bottom_margin">12dp</dimen>
+    <dimen name="normal_weidget_padding">20dp</dimen>
+
+    <dimen name="distance_between_picture_and_name">12dp</dimen>
+
+    <!--首页-->
+    <dimen name="news_widget_margin">8dp</dimen>
+    <dimen name="news_title_size">16dp</dimen>
+    <dimen name="news_meta_size">13dp</dimen>
+    <dimen name="news_meta_margin">2dp</dimen>
+    <dimen name="news_padding">12dp</dimen>
+    <!--视频-->
+    <dimen name="vedio_title_size">14dp</dimen>
+
+
+    <!--文章详情页-->
+    <dimen name="article_ic_size">20dp</dimen>
+    <dimen name="article_widget_height">50dp</dimen>
+    <dimen name="article_title">25dp</dimen>
+    <dimen name="article_meta">14dp</dimen>
+    <dimen name="aricle_meta_margin_bottom">20dp</dimen>
+    <dimen name="article_content">19dp</dimen>
+    <dimen name="article_padding">15dp</dimen>
+
+    <!--widget统一样式-->
+    <dimen name="widget_normal_padding">15dp</dimen>
+    <dimen name="widget_normal_left_margin">30dp</dimen>
+    <!--title bar-->
+    <dimen name="title_bar_height">60dp</dimen>
+    <dimen name="title_bar_back_img_size">20dp</dimen>
+    <dimen name="title_bar_text_size">20dp</dimen>
+    <!--评论-->
+    <dimen name="comment_title_size">17dp</dimen>
+    <dimen name="comment_title_ribbon_width">60dp</dimen>
+    <dimen name="comment_title_ribbon_height">2dp</dimen>
+    <dimen name="comment_title_ribbon_margin">10dp</dimen>
+    <dimen name="comment_item_avator">35dp</dimen>
+    <dimen name="comment_item_name_size">18dp</dimen>
+    <!--基本选项-->
+    <dimen name="base_option_icon_size">25dp</dimen>
+</resources>

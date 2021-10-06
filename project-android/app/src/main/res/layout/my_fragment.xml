@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/normal_bottom_margin"
+        android:background="@color/colorWidgetBackground"
+        android:padding="@dimen/normal_weidget_padding">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_avator"
+            android:layout_width="@dimen/bigger_icon_size"
+            android:layout_height="@dimen/bigger_icon_size"
+            android:src="@drawable/ic_face" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_between_picture_and_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_avator"
+            android:text="@string/LoginOrRegister"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/bigger_font_size" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/distance_between_picture_and_name"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/iv_avator"
+            android:text="这个人很懒，什么都没留下"
+            android:textColor="@color/colorSecondText"
+            android:textSize="@dimen/little_font_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/normal_bottom_margin"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_normal"
+            android:clickable="true"
+            android:padding="@dimen/normal_weidget_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_face"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="修改个人信息"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/normal_font_size" />
+
+            <ImageView
+                android:layout_width="@dimen/arrow_icon_size"
+                android:layout_height="@dimen/arrow_icon_size"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/ic_right_arrow" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_normal"
+            android:clickable="true"
+            android:padding="@dimen/normal_weidget_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_star"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="收藏"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/normal_font_size" />
+
+            <ImageView
+                android:layout_width="@dimen/arrow_icon_size"
+                android:layout_height="@dimen/arrow_icon_size"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/ic_right_arrow" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_normal"
+            android:clickable="true"
+            android:padding="@dimen/normal_weidget_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/ic_night"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center_vertical"
+                android:text="暗夜模式"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/normal_font_size" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/switch_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:enabled="true"
+                app:thumbTint="@color/colorPrimary"
+                app:trackTint="@color/colorBackground" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/normal_bottom_margin"
+        android:background="@drawable/bg_normal"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/normal_weidget_padding"
+        android:text="@string/LoginOrRegister"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_normal"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="@dimen/normal_weidget_padding"
+        android:text="@string/unlogin"
+        android:textColor="@color/colorDanger"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyColor">
+        <attr name="colorPrimary" format="color" />
+        <attr name="colorDanger" format="color" />
+        <attr name="colorWidgetBackground" format="color" />
+        <attr name="colorBackground" format="color" />
+        <attr name="colorWidgetPressed" format="color" />
+        <attr name="colorPrimaryText" format="color" />
+        <attr name="colorSecondText" format="color" />
+        <attr name="colorSuccess" format="color" />
+    </declare-styleable>
+</resources>

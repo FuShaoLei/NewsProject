@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3675FF</color>
+    <color name="colorDanger">#F56C6C</color>
+    <color name="colorBackground">#f5f5f5</color>
+    <color name="colorWidgetBackground">#ffffff</color>
+    <color name="colorWidgetPressed">#F0F0F0</color>
+    <color name="colorPrimaryText">#333333</color>
+    <color name="colorSecondText">#6A737D</color>
+    <color name="colorSuccess">#67C23A</color>
+</resources>

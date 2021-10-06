@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/bg_normal">
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/news_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_cover"
+        android:layout_marginHorizontal="@dimen/news_widget_margin"
+        android:layout_marginTop="4dp"
+        android:text="新闻标题新闻标题新闻标题新闻"
+        android:textColor="@color/colorPrimaryText"
+        android:textSize="@dimen/vedio_title_size" />
+
+    <TextView
+        android:id="@+id/news_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_title"
+        android:layout_marginTop="@dimen/news_meta_margin"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="@dimen/news_widget_margin"
+        android:text="腾讯新闻"
+        android:textColor="@color/colorSecondText"
+        android:textSize="@dimen/news_meta_size" />
+
+    <TextView
+        android:id="@+id/news_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/news_title"
+        android:layout_marginLeft="@dimen/news_meta_size"
+        android:layout_marginTop="@dimen/news_meta_margin"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@id/news_author"
+        android:text="2020-11-12"
+        android:textSize="@dimen/news_meta_size" />
+</RelativeLayout>

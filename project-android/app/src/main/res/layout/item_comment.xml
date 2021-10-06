@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/normal_weidget_padding"
+    android:background="@color/colorWidgetBackground">
+
+    <ImageView
+        android:id="@+id/comment_avator"
+        android:layout_width="@dimen/comment_item_avator"
+        android:layout_height="@dimen/comment_item_avator"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_between_picture_and_name"
+        android:layout_toRightOf="@id/comment_avator"
+        android:text="风清扬"
+        android:textSize="@dimen/comment_item_name_size"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/colorPrimaryText" />
+
+    <TextView
+        android:id="@+id/comment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_name"
+        android:layout_marginLeft="@dimen/distance_between_picture_and_name"
+        android:layout_marginBottom="@dimen/normal_bottom_margin"
+        android:layout_toRightOf="@id/comment_avator"
+        android:text="2021-01-14"
+        android:textColor="@color/colorSecondText" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_date"
+        android:layout_marginLeft="@dimen/distance_between_picture_and_name"
+        android:layout_toRightOf="@id/comment_avator"
+        android:text="下拉框介绍了科学家拉克丝就立刻的艰苦拉萨大手大脚撒娇的离开家离开洒家的离开教室大家阿斯利康打开拉萨考虑到看了就爱上了"
+        android:textColor="@color/colorPrimaryText" />
+
+</RelativeLayout>

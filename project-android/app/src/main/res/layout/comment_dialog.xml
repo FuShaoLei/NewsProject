@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWidgetBackground"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/bg_grey"
+        android:padding="5dp"
+        android:textColor="@color/colorPrimaryText"
+        android:paddingLeft="35dp"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="35dp"
+        android:paddingBottom="@dimen/dp_10" />
+
+    <TextView
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingRight="20dp"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="评论"
+        android:textColor="@color/colorPrimary" />
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWidgetBackground"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <include layout="@layout/widget_title_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/title_bar_height"
+        android:layout_marginBottom="@dimen/title_bar_height"
+        android:background="@color/colorBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/normal_bottom_margin"
+                android:background="@color/colorWidgetBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/article_padding">
+
+                <cn.jzvd.JzvdStd
+                    android:visibility="gone"
+                    android:id="@+id/jz_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <TextView
+                    android:id="@+id/article_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="标题"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/article_title" />
+
+                <TextView
+                    android:id="@+id/article_meta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="新浪新闻     2020-01-11"
+                    android:textColor="@color/colorSecondText"
+                    android:textSize="@dimen/article_meta" />
+
+                <TextView
+                    android:id="@+id/article_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/aricle_meta_margin_bottom"
+                    tools:text="content"
+                    android:textColor="@color/colorPrimaryText"
+                    android:textSize="@dimen/article_content" />
+            </LinearLayout>
+
+            <include layout="@layout/widget_comment" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/widget_base_option" />
+    </LinearLayout>
+</RelativeLayout>
